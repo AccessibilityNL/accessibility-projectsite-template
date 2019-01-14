@@ -1,0 +1,130 @@
+/* rode achtergrond */
+header,
+footer .bar,
+button.open-menu,
+.tabel table.sortable thead td,
+.tabel table.sortable thead th,
+section.quiz .action button,
+section.quiz .quiz-entry button.next,
+.accplayer .mejs__controls,
+.Accordion-trigger,
+section.intro .button a,
+section.actie .button a,
+section.vragen .faq-expand
+{
+  background-color: #BB4464;
+}
+
+
+/* lichtrode achtergrond */
+nav.sub,
+.tabel table.sortable tbody th
+{
+  background-color: #F1DAE0;
+}
+
+/* gele achtergrond */
+section.actie .actie-container
+{
+	background-color: #FCE4BC;
+}
+
+/* rode gradient */
+section.intro
+{
+  background: linear-gradient(to right, #F1DAE0 80%, #F8ECEF 100%);
+}
+
+/* witte tekst */
+header a,
+section.intro .button a,
+section.actie .button a,
+section.vragen .faq-expand,
+footer .bar,
+footer .bar a,
+button.open-menu,
+.tabel table.sortable thead td button,
+.tabel table.sortable thead th button,
+.tabel table.sortable tbody th,
+.tabel table.sortable tbody th a,
+section.quiz .action button,
+section.quiz .quiz-entry button.next
+{
+  color: #fff;
+}
+
+/* donkerblauwe tekst */
+section.intro h2,
+.stappen h2,
+.stappen .nummer,
+.bullets h2,
+.tekst h2,
+.tekst h3,
+section.actie h2,
+section.actie h3,
+section.vragen h2,
+section.vragen h3,
+section.video h2,
+section.video .video_download a,
+section.deelnemers h2,
+nav.main ul li a,
+nav.sub ul li a,
+button.close-menu,
+section.quiz h2,
+section.vragen_categorie .filter button,
+section.vragen_categorie .vraag a,
+section.afbeelding h2,
+.tabel table.sortable tbody th,
+.tabel table.sortable tbody th a,
+.tekst a
+{
+  color: #1E3E58;
+}
+.links a
+{
+	color: #B53A58;
+}
+
+/* rode tekst */
+footer .links a
+{
+	color: #B53A58;
+}
+
+/* blauwe tekst */
+footer .links
+{
+	color: #387B9E;
+}
+
+/* donkerrode rand */
+nav.sub
+{
+	border-color: #BB4464;
+}
+
+/* lichtrode rand */
+section.stappen .stap
+{
+	border-color: #F1DAE0;
+}
+
+/* donkerblauwe rand */
+section.quiz .quiz-container
+{
+	border-color: #1E3E58;
+}
+
+/* donkergele rand */
+section.actie .actie-container
+{
+	border-color: #FAD28F;
+}
+
+/* witte rand */
+button.open-menu,
+.tabel table.sortable thead td,
+.tabel table.sortable thead th
+{
+	border-color: #fff;
+}

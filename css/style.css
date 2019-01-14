@@ -1,0 +1,1201 @@
+@font-face {
+  font-family: museo;
+  src: url('../fonts/museo100-regular.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: museo;
+  src: url('../fonts/museo700-regular.otf');
+  font-weight: bold;
+}
+
+html, body
+{
+  font-family: museo, sans-serif;
+  line-height: 1.5;
+}
+
+*
+{
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:hover,
+a:focus
+{
+	text-decoration: underline;
+},
+button:hover,
+button:focus
+{
+  text-decoration: underline;
+}
+
+.phone-only
+{
+	display: none;
+}
+
+.screenreader
+{
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.container
+{
+  max-width: 1000px;
+	padding: 0 25px;
+  margin: 0 auto;
+  position: relative;
+  overflow: auto;
+}
+
+.overlay
+{
+	display: none;
+}
+
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8
+{
+	display: grid;
+	grid-column-gap: 20px;
+}
+.col2
+{
+	grid-template-columns: repeat(2, 1fr);
+}
+.col3
+{
+	grid-template-columns: repeat(3, 1fr);
+}
+.col4
+{
+	grid-template-columns: repeat(4, 1fr);
+}
+.col5
+{
+	grid-template-columns: repeat(5, 1fr);
+}
+.col6
+{
+	grid-template-columns: repeat(6, 1fr);
+}
+.col7
+{
+	grid-template-columns: repeat(7, 1fr);
+}
+.col8
+{
+	grid-template-columns: repeat(8, 1fr);
+}
+
+
+header
+{
+
+}
+  header .site-logo
+  {
+    float: left;
+    height: 80px;
+    margin: 10px 10px 0 0;
+  }
+  header h1
+  {
+    float: left;
+    font-size: 250%;
+    max-width: 10em;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  header .slogan
+  {
+    float: left;
+    max-width: 14em;
+    line-height: 1.2;
+    font-size: 90%;
+    margin-top: 35px;
+    font-weight: bold;
+  }
+  header .acc-logo
+  {
+    float: right;
+		margin-top: 32px;
+  }
+	nav.main ul
+	{
+		list-style-type: none;
+		display: block;
+		margin: 0;
+		padding: 0;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+		nav.main ul li
+		{
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+		}
+			nav.main ul li a
+			{
+				display: block;
+				padding: 10px 20px;
+				text-decoration: none;
+				font-size: 125%;
+			}
+			nav.main ul li:first-of-type a
+			{
+				padding-left: 0;
+			}
+			nav.main ul li:last-of-type a
+			{
+				padding-right: 0;
+			}
+			nav.main ul li a:focus,
+			nav.main ul li a:hover
+			{
+				text-decoration: underline;
+			}
+			nav.main ul li.active a
+			{
+				font-weight: bold;
+			}
+nav.sub
+{
+	border: solid 1px #000;
+	border-left: 0;
+	border-right: 0;
+	margin-bottom: 1em;
+}
+	nav.sub ul
+	{
+		list-style-type: none;
+		display: block;
+		margin: 0;
+		padding: 0;
+		white-space: nowrap;
+		overflow: auto;
+	}
+		nav.sub ul li
+		{
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+		}
+			nav.sub ul li a
+			{
+				display: block;
+				padding: 10px 20px;
+				text-decoration: none;
+				font-size: 125%;
+				font-weight: bold;
+			}
+			nav.sub ul li a:focus,
+			nav.sub ul li a:hover
+			{
+				text-decoration: underline;
+			}
+
+section:not(:first-of-type)
+{
+	margin: 50px 0;
+}
+
+section.intro
+{
+
+}
+  section.intro .container
+  {
+    background-size: auto 100%;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+  }
+  section.intro .image
+  {
+    float: left;
+    /* max-width: 45%; */
+    height: 100%;
+  }
+  section.intro .col
+  {
+    float: right;
+    width: 45%;
+  }
+  section.intro h2
+  {
+    font-size: 200%;
+  }
+  section.intro .body
+  {
+    font-size: 120%;
+  }
+  section.intro .button
+  {
+    text-align: center;
+    margin: 2em 0;
+  }
+    section.intro .button > a
+    {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 120%;
+      text-transform: uppercase;
+	  font-weight: bold;
+	  text-decoration: none;
+
+	}
+
+	section.intro .button:hover > a,
+	section.intro .button:focus > a
+	{
+		text-decoration: underline;
+	}
+
+section.stappen
+{
+
+}
+  section.stappen h2
+  {
+    font-size: 250%;
+		text-align: center;
+  }
+    section.stappen .stap
+    {
+			border: solid 1px #ccc;
+			text-align: left;
+    }
+			section.stappen .stap .afbeelding
+			{
+				width: 100%;
+			}
+			section.stappen .stap .inhoud
+			{
+				position: relative;
+				min-height: 3em;
+			}
+				section.stappen .stap .inhoud .nummer
+				{
+					position: absolute;
+					left: 0;
+					top: 0;
+					text-align: center;
+					width: 35px;
+					margin: 0;
+					font-size: 200%;
+					font-weight: bold;
+					line-height: 1.25;
+				}
+				section.stappen .stap .inhoud .tekst
+				{
+					padding: 0 1em 10px 40px;
+					margin: 0;
+					font-size: 120%;
+				}
+
+section.bullets
+{
+
+}
+	section.bullets h2
+	{
+		font-size: 250%;
+		text-align: center;
+	}
+	section.bullets .bullets-container
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 40px;
+		grid-row-gap: 2em;
+		width: 85%;
+		margin: 0 auto;
+	}
+		section.bullets .bullet
+		{
+			padding-left: 100px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			background-size: 80px auto;
+			min-height: 100px;
+		}
+			section.bullets .bullet h3
+			{
+				font-size: 150%;
+				margin: 0;
+				line-height: 1;
+			}
+			section.bullets .bullet .tekst
+			{
+				font-size: 120%;
+				margin: 0.5em 0;
+			}
+
+section.tekst
+{
+
+}
+	section.tekst .container
+	{
+
+	}
+	section.tekst h2
+	{
+		font-size: 250%;
+	}
+	section.tekst .tekst
+	{
+		font-size: 120%;
+	}
+		section.tekst .tekst h3
+		{
+			margin: 2em 0 -0.5em 0;
+			font-size: 115%;
+		}
+
+section.actie
+{
+
+}
+	section.actie h2
+	{
+		font-size: 250%;
+	}
+	section.actie .actie-container
+	{
+		border: solid 30px #888;
+		border-left: 0;
+		border-right: 0;
+	}
+		section.actie .actie-container .container
+		{
+			background-size: auto 100%;
+			background-position: 100% 50%;
+			background-repeat: no-repeat;
+			min-height: 300px;
+		}
+		section.actie .actie-container .inhoud
+		{
+			width: 45%;
+			margin: 40px;
+		}
+			section.actie .actie-container .inhoud h3
+			{
+				font-size: 175%;
+				margin: 0;
+			}
+			section.actie .actie-container .inhoud .tekst
+			{
+				font-size: 120%;
+			}
+		section.actie .actie-container .container .button
+		{
+			text-align: center;
+			margin: 2em 0;
+		}
+			section.actie .actie-container .container .button a
+			{
+				display: inline-block;
+				padding: 10px 20px;
+				font-size: 120%;
+				text-transform: uppercase;
+				font-weight: bold;
+				text-decoration: none;
+			}
+			section.actie .actie-container .container .button:hover > a,
+			section.actie .actie-container .container .button:focus > a
+			{
+				text-decoration: underline;
+			}
+
+section.vragen
+{
+	text-align: center;
+}
+	section.vragen h2
+	{
+		font-size: 250%;
+	}
+	section.vragen .vragen-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 40px;
+		grid-row-gap: 4em;
+		margin-bottom: 4em;
+	}
+		section.vragen .vragen-container .vraag
+		{
+			overflow: hidden;
+			text-align: left;
+		}
+		section.vragen .vragen-container .vraag.collapsed
+		{
+			display: none;
+			max-height: 0;
+		}
+			section.vragen .vragen-container .vraag h3
+			{
+				font-size: 175%;
+				margin: 0 0 5px 0;
+			}
+			section.vragen .vragen-container .vraag .tekst
+			{
+				margin: 0;
+				font-size: 120%;
+			}
+	section.vragen .faq-expand
+	{
+		padding: 15px 30px;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 110%;
+		border: 0;
+	}
+	section.vragen .faq-expand:hover,
+	section.vragen .faq-expand:focus
+	{
+		text-decoration: underline;
+	}
+
+section.video
+{
+
+}
+	section.video h2
+	{
+		font-size: 250%;
+	}
+
+section.deelnemers
+	{
+
+	}
+		section.deelnemers h2
+		{
+			font-size: 250%;
+			text-align: center;
+		}
+		section.deelnemers .deelnemers-items
+		{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			align-items: center;
+			grid-row-gap: 20px;
+		}
+			section.deelnemers .deelnemers-items .deelnemer img
+			{
+				display: block;
+				margin: 0 auto;
+				max-width: 100%;
+			}
+
+section.quiz
+{
+
+}
+	section.quiz h2
+	{
+		font-size: 250%;
+		text-align: center;
+	}
+		section.quiz .quiz-container
+		{
+			position: relative;
+			overflow: hidden;
+			border: solid 1px #888;
+			white-space: nowrap;
+			margin: 0;
+			padding: 0;
+		}
+			section.quiz .quiz-entry
+			{
+				display: none;
+				text-align: center;
+				padding: 50px 20px;
+				width: 100%;
+				white-space: normal;
+			}
+			section.quiz .quiz-entry.active
+			{
+				display: inline-block;
+			}
+			section.quiz .quiz-entry .quiz-answer
+			{
+				display: none;
+				margin: 1em 0 2em 0;
+				font-size: 150%;
+				font-weight: bold;
+			}
+				section.quiz .quiz-entry h3
+				{
+					margin: 0 0 1em 0;
+					font-size: 150%;
+					font-weight: normal;
+				}
+				section.quiz .action
+				{
+					overflow: hidden;
+				}
+				section.quiz .action button
+				{
+					display: inline-block;
+					margin: 0 20px;
+					border: 0;
+					padding: 10px 30px;
+					font-weight: bold;
+					font-size: 150%;
+				}
+				section.quiz button:hover,
+				section.quiz button:focus
+				{
+					opacity: 0.8;
+				}
+			section.quiz .quiz-entry button.next
+			{
+				display: none;
+				border: 0;
+				padding: 10px 30px;
+				font-weight: bold;
+				font-size: 150%;
+			}
+
+
+section.vragen_categorie
+{
+
+}
+	section.vragen_categorie .vragen-container
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 40px;
+		grid-row-gap: 2em;
+		width: 85%;
+		margin: 0 auto;
+	}
+		section.vragen_categorie .vraag
+		{
+			padding-left: 100px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			background-size: 80px auto;
+			min-height: 100px;
+		}
+			section.vragen_categorie .vraag h3
+			{
+				font-size: 150%;
+				margin: 0;
+				line-height: 1;
+			}
+			section.vragen_categorie .vraag .tekst
+			{
+				font-size: 120%;
+				margin: 0.5em 0;
+			}
+	section.vragen_categorie .filter
+	{
+		text-align: center;
+	}
+		section.vragen_categorie .filter ul
+		{
+			display: block;
+			list-style-type: none;
+			margin: 0 0 2em 0;
+			padding: 0;
+		}
+			section.vragen_categorie .filter ul li
+			{
+				display: inline-block;
+				margin: 0 0.5em;
+				padding: 0;
+			}
+				section.vragen_categorie .filter ul li button
+				{
+					display: block;
+					margin: 0;
+					padding: 5px 10px;
+					border: 0;
+					background: none;
+					font-size: 120%;
+					text-transform: uppercase;
+					cursor: pointer;
+				}
+				section.vragen_categorie .filter ul li button:hover,
+				section.vragen_categorie .filter ul li button:focus
+				{
+					text-decoration: underline;
+					opacity: 0.5;
+					outline: 0;
+				}
+				section.vragen_categorie .filter ul li button.active
+				{
+					font-weight: bold;
+					text-decoration: underline;
+					padding: 5px 7px;
+					opacity: 1;
+				}
+
+section.code
+{
+
+}
+	section.code .tekst
+	{
+		font-size: 120%;
+	}
+	section.code pre.code
+	{
+		-moz-tab-size: 2;
+		tab-size: 2;
+		white-space: pre-wrap;
+		color: #000;
+		font-size: 85%;
+		line-height: 2;
+		padding: 10px;
+		border: solid 1px #333;
+		background-color: #eee;
+		margin: 0;
+	}
+
+footer
+{
+	padding-top: 5em;
+  min-height: 150px;
+	font-size: 120%;
+}
+	footer .bar a
+	{
+		font-weight: bold;
+	}
+	footer .links
+	{
+		margin-top: 1em;
+		font-weight: bold;
+		overflow: hidden;
+	}
+		footer .links .parent
+		{
+			float: right;
+			margin: 0 0 2em 0;
+		}
+
+/* video player stuff */
+.Accordion {
+
+}
+
+.Accordion,
+.Accordion > * + * {
+    border-top: 1px solid hsl(0, 0%, 82%);
+}
+
+.Accordion-trigger {
+    background: none;
+    border: 0;
+    color: hsl(0, 0%, 13%);
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 1em 1.5em 1em 2em;
+    position: relative;
+    text-align: left;
+    width: 100%;
+		color: #fff;
+}
+
+.Accordion-trigger:focus,
+.Accordion-trigger:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
+.Accordion-title {
+  display: block; /* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/8295099/ */
+  pointer-events: none;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+.Accordion-icon {
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    height: 1rem;
+		width: 1rem;
+    pointer-events: none;
+    position: absolute;
+    right: 2em;
+    top: 50%;
+    transform: translateY(-60%) rotate(45deg);
+}
+
+.Accordion-trigger:focus .Accordion-icon,
+.Accordion-trigger:hover .Accordion-icon {
+    /* border-color: hsl(0, 0%, 13%); */
+}
+
+.Accordion-trigger[aria-expanded="true"] .Accordion-icon {
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+.Accordion-panel {
+    margin: 0;
+    padding: 1em 1.5em;
+		border: solid 1px #ccc;
+		border-top: 0;
+}
+
+/* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4806035/ */
+.Accordion-panel[hidden] {
+  display: none;
+}
+
+.video_download
+{
+	list-style: square;
+}
+	.video_download li
+	{
+		padding: 0;
+		margin: 0;
+		margin-bottom: 1.5em;
+	}
+	.video_download li:last-child
+	{
+		margin-bottom: 0;
+	}
+		.video_download li a
+		{
+			font-weight: bold;
+			font-size: 120%;
+		}
+		.video_download li p
+		{
+			margin: 0;
+		}
+
+.video_text
+{
+	font-size: 120%;
+	font-family: museo, sans-serif;
+	line-height: 1.5;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+.tabel table.sortable
+{
+	width: 100%;
+	border-spacing: 0;
+	font-size: 120%;
+	border-collapse: collapse;
+}
+	.tabel table.sortable thead td,
+	.tabel table.sortable thead th
+	{
+		text-align: center;
+		padding: 10px 30px 10px 20px;
+		border: solid 1px #ccc;
+		white-space: nowrap;
+		position: relative;
+	}
+		.tabel table.sortable thead th button
+		{
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+			border: 0;
+			padding: 5px 10px;
+			background: transparent;
+			white-space: nowrap;
+		}
+		.tabel table.sortable thead th button:hover,
+		.tabel table.sortable thead th button:focus
+		{
+			text-decoration: underline;
+		}
+		.tabel table.sortable thead th button.sort-asc,
+		.tabel table.sortable thead th button.sort-desc
+		{
+			font-weight: bold;
+			text-decoration: underline;
+			padding: 5px 7px;
+		}
+			.tabel table.sortable thead th button:not(.sort-desc) p.sort-desc,
+			.tabel table.sortable thead th button.sort-desc p.sort-asc
+			{
+				display: none;
+			}
+		.tabel table.sortable thead th button::after
+		{
+			content: "⇅";
+			position: absolute;
+			right: 10px;
+			font-weight: bold;
+			opacity: 0.5;
+		}
+		.tabel table.sortable thead th button.sort-asc::after
+		{
+			content: "➜";
+			opacity: 1;
+			transform: rotate(90deg);
+		}
+		.tabel table.sortable thead th button.sort-desc::after
+		{
+			content: "➜";
+			opacity: 1;
+			transform: rotate(-90deg);
+		}
+	.tabel table.sortable tbody th,
+	.tabel table.sortable tbody td
+	{
+		padding: 10px 20px;
+		border: solid 1px #888;
+		text-align: center;
+	}
+
+section.afbeelding
+{
+
+}
+	section.afbeelding h2
+	{
+		font-size: 250%;
+	}
+	section.afbeelding .tekst
+	{
+		font-size: 120%;
+	}
+		section.afbeelding .tekst h3
+		{
+			margin: 2em 0 -0.5em 0;
+			font-size: 115%;
+		}
+
+	section.afbeelding img.afbeelding
+	{
+		max-width: 100%;
+	}
+
+/* responsive */
+@media(max-width: 1030px) {
+	nav.main ul li a,
+	nav.sub ul li a
+	{
+		font-size: 100%;
+		padding: 10px;
+	}
+}
+
+@media(max-width: 900px) {
+	header .acc-logo
+	{
+		margin-top: 40px;
+		height: 25px;
+	}
+}
+
+@media(max-width: 800px) {
+	nav.main
+	{
+		position: fixed;
+		width: 65vw;
+		top: 0;
+		bottom: 0;
+		right: -65vw;
+		background-color: #fff;
+		z-index: -1;
+		overflow: auto;
+		box-shadow: 0;
+		transition: all 350ms;
+	}
+	.menu-open nav.main
+	{
+		right: 0;
+		box-shadow: 0 0 100px #000;
+		z-index: 99;
+	}
+		nav.main ul
+		{
+			margin-top: 40px;
+			padding-bottom: 50px;
+		}
+			nav.main ul li
+			{
+				display: block;
+			}
+				nav.main ul li:first-of-type a,
+				nav.main ul li:last-of-type a
+				{
+					padding: 10px;
+				}
+
+	.overlay
+	{
+		display: block;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity: 0;
+		transition: all 350ms;
+	}
+
+	button.open-menu,
+	nav button.close-menu
+	{
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		z-index: 9999999;
+		font-weight: bold;
+		border: solid 1px #ccc;
+		padding: 5px 10px;
+	}
+
+	nav button.close-menu
+	{
+		border: 0;
+		background-color: transparent;
+		font-size: 120%;
+	}
+
+	body.menu-open
+	{
+		overflow: hidden;
+	}
+		body.menu-open button.open-menu
+		{
+			display: none;
+		}
+		body.menu-open .overlay
+		{
+			z-index: 9;
+			opacity: 1;
+		}
+
+	.container
+	{
+		padding: 0;
+	}
+
+	header .container,
+	section.intro .col,
+	section.tekst .container,
+	section.video .container,
+	section.stappen .container,
+	section.bullets .container,
+	section.actie .container,
+	section.actie .actie-container .inhoud,
+	section.vragen .container,
+	footer .container,
+	section.vragen_categorie .container,
+	section.quiz .container,
+	section.tabel .container,
+	section.code .container,
+	section.afbeelding .container
+	{
+		padding: 0 10px;
+	}
+
+	section:not(:first-of-type)
+	{
+		margin: 20px 0;
+	}
+
+	header .slogan,
+	section.intro .col,
+	section.actie .actie-container .inhoud
+	{
+		float: none;
+		display: block;
+		margin: 0;
+		max-width: initial;
+		width: auto;
+	}
+
+	header .slogan br,
+	header .slogan br::after
+	{
+		content: " ";
+	}
+
+	.phone-only
+	{
+		display: block;
+	}
+
+	.col2,
+	.col3,
+	.col4,
+	.col5,
+	.col6,
+	.col7,
+	.col8,
+	section.bullets .bullets-container,
+	section.vragen .vragen-container,
+	section.vragen_categorie .vragen-container
+	{
+		display: block;
+		width: auto;
+	}
+		.col2 .col,
+		.col3 .col,
+		.col4 .col,
+		.col5 .col,
+		.col6 .col,
+		.col7 .col,
+		.col8 .col,
+		section.bullets .bullet,
+		section.vragen .vragen-container .vraag,
+		section.vragen_categorie .vragen-container .vraag
+		{
+			margin-bottom: 2em;
+		}
+		section.vragen_categorie .vraag
+		{
+			padding: 10px;
+		}
+			.col .inhoud .tekst
+			{
+				min-height: 6em;
+			}
+
+	header a
+	{
+		text-decoration: none !important;
+	}
+	header .site-logo
+	{
+		height: 60px;
+		margin-top: 50px;
+	}
+	header h1
+	{
+		margin-top: 62px;
+		font-size: 130%;
+	}
+	header .slogan
+	{
+		padding: 2em 0 1em 0;
+		clear: both;
+	}
+	header .acc-logo
+	{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		margin: 0;
+		height: 20px;
+	}
+
+	section.intro .container,
+	section.actie .actie-container .container
+	{
+		background-size: 0 0;
+	}
+		section.intro img.intro,
+		section.actie img.actie
+		{
+			margin: 0;
+			width: 100%;
+			height: auto;
+		}
+
+	section.tekst h2,
+	section.video h2,
+	section.stappen h2,
+	section.bullets h2,
+	section.actie h2,
+	section.vragen h2,
+	section.deelnemers h2,
+	section.vragen_categorie h2,
+	section.quiz h2,
+	section.tabel h2,
+	section.code h2,
+	section.afbeelding h2
+	{
+		text-align: left;
+		font-size: 200%;
+	}
+
+	section.actie .actie-container .container
+	{
+		padding: 0;
+	}
+	section.actie .actie-container .inhoud
+	{
+		margin-top: 2em;
+	}
+
+	section.vragen .vragen-container .vraag h3
+	{
+		font-size: 150%;
+	}
+
+	footer .links .parent
+	{
+		float: none;
+		display: inline-block;
+		margin-top: 2em;
+	}
+	section.deelnemers .deelnemers-items
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	section.quiz .action button
+	{
+		margin: 0;
+		padding: 10px 20px;
+	}
+	section.quiz .action button:first-child
+	{
+		float: left;
+
+	}
+	section.quiz .action button:last-child
+	{
+		float: right;
+	}
+
+	section.vragen_categorie .filter ul
+	{
+		list-style-type: square;
+	}
+		section.vragen_categorie .filter ul li
+		{
+			display: list-item;
+			margin-left: 25px;
+			font-size: 85%;
+		}
+			section.vragen_categorie .filter ul li button,
+			section.vragen_categorie .filter ul li button:first-of-type,
+			section.vragen_categorie .filter ul li button:last-of-type
+			{
+				margin: 5px 0;
+				padding: 0;
+			}
+}

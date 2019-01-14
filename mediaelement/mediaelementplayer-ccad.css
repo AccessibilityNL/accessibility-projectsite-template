@@ -1,0 +1,53 @@
+.mejs__video
+{
+	margin-bottom: 40px;
+}
+
+.mejs__controls
+{
+	position: absolute;
+	height: 40px;
+	bottom: -40px;
+	/*background: #333333 !important;*/
+}
+
+.mejs__currenttime,
+.mejs__duration
+{
+	font-size: 125%;
+}
+
+.mejs__captions-text
+{
+	font-size: 135%;
+	line-height: 1.5;
+	padding: 1px;
+}
+
+.mejs__captions-button > button
+{
+	background-image: url('cc-icon.png');
+	background-size: auto 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	opacity: 0.65;
+	padding: 0;
+}
+.mejs__captions-button.mejs__captions-enabled > button
+{
+	opacity: 1;
+}
+
+.mejs__audiodescription-button > button
+{
+	background-image: url('ad-icon.png');
+	background-size: auto 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	opacity: 0.65;
+	padding: 0;
+}
+.mejs__audiodescription-button.mejs__audiodescription-active > button
+{
+	opacity: 1;
+}

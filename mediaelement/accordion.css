@@ -1,0 +1,78 @@
+.Accordion {
+
+}
+
+.Accordion,
+.Accordion > * + * {
+    border-top: 1px solid hsl(0, 0%, 82%);
+}
+
+.Accordion-trigger {
+    background: none;
+    border: 0;
+    color: hsl(0, 0%, 13%);
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 1em 1.5em 1em 2em;
+    position: relative;
+    text-align: left;
+    width: 100%;
+		color: #fff;
+		background-color: #333;
+}
+
+.Accordion-trigger:focus,
+.Accordion-trigger:hover {
+    background-color: #555;
+}
+
+.Accordion-title {
+  display: block; /* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/8295099/ */
+  pointer-events: none;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.Accordion-icon {
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    height: 1rem;
+		width: 1rem;
+    pointer-events: none;
+    position: absolute;
+    right: 2em;
+    top: 50%;
+    transform: translateY(-60%) rotate(45deg);
+}
+
+.Accordion-trigger:focus .Accordion-icon,
+.Accordion-trigger:hover .Accordion-icon {
+    /* border-color: hsl(0, 0%, 13%); */
+}
+
+.Accordion-trigger[aria-expanded="true"] .Accordion-icon {
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+.Accordion-panel {
+    margin: 0;
+    padding: 1em 1.5em;
+		border: solid 1px #ccc;
+		border-top: 0;
+}
+
+/* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4806035/ */
+.Accordion-panel[hidden] {
+  display: none;
+}
+
+.video_tekst
+{
+	font-size: 2rem;
+	font-family: "Source Sans Pro", sans-serif;
+	line-height: 1.5;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
