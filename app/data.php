@@ -81,7 +81,8 @@ function getData()
 
 		if(!isset($page))
 		{
-			$page = reset(array_keys($pages));
+      $pagesKeys = array_keys($pages);
+			$page = reset($pagesKeys);
 		}
 
 		$files[] = $pages[$page]['file'];
