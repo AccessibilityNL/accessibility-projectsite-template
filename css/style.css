@@ -3,13 +3,15 @@
   src: url('../fonts/museo100-regular.otf');
   font-weight: normal;
 }
+
 @font-face {
   font-family: museo;
   src: url('../fonts/museo700-regular.otf');
   font-weight: bold;
 }
 
-html, body
+html,
+body
 {
   font-family: museo, sans-serif;
   line-height: 1.5;
@@ -25,8 +27,9 @@ a:link,
 a:hover,
 a:focus
 {
-	text-decoration: underline;
-},
+  text-decoration: underline;
+}
+
 button:hover,
 button:focus
 {
@@ -35,25 +38,25 @@ button:focus
 
 .phone-only
 {
-	display: none;
+  display: none;
 }
 
 .screenreader
 {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .container
 {
   max-width: 1000px;
-	padding: 0 25px;
+  padding: 0 25px;
   margin: 0 auto;
   position: relative;
   overflow: auto;
@@ -61,7 +64,7 @@ button:focus
 
 .overlay
 {
-	display: none;
+  display: none;
 }
 
 .col2,
@@ -75,34 +78,42 @@ button:focus
 	display: grid;
 	grid-column-gap: 20px;
 }
+
 .col2
 {
-	grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
+
 .col3
 {
-	grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
+
 .col4
 {
-	grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
+
 .col5
 {
-	grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
+
 .col6
 {
-	grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
+
 .col7
 {
-	grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1fr);
 }
+
 .col8
 {
-	grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
 }
+
 
 
 header

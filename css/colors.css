@@ -1,4 +1,4 @@
-/* rode achtergrond */
+/* achtergrond */
 header,
 footer .bar,
 button.open-menu,
@@ -7,14 +7,18 @@ button.open-menu,
 section.quiz .action button,
 section.quiz .quiz-entry button.next,
 .accplayer .mejs__controls,
-.Accordion-trigger,
+.Accordion-trigger
+{
+  background-color: #1E3E58; /* blauw */
+}
+
+/* Knoppen achtergrond */
 section.intro .button a,
 section.actie .button a,
 section.vragen .faq-expand
 {
-  background-color: #BB4464;
+  background-color: #B53A58;
 }
-
 
 /* lichtrode achtergrond */
 nav.sub,
@@ -26,13 +30,13 @@ nav.sub,
 /* gele achtergrond */
 section.actie .actie-container
 {
-	background-color: #FCE4BC;
+  background-color: #FCE4BC;
 }
 
-/* rode gradient */
+/* blauwe gradient */
 section.intro
 {
-  background: linear-gradient(to right, #F1DAE0 80%, #F8ECEF 100%);
+  background: linear-gradient(to right, #FCE4BC 0%, #FCE4BC 100%);
 }
 
 /* witte tekst */
@@ -80,6 +84,12 @@ section.afbeelding h2,
 {
   color: #1E3E58;
 }
+
+/* Menu achtergrond */
+nav.main {
+  background-color: #b3cfe6;
+}
+
 .links a
 {
 	color: #B53A58;
