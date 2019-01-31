@@ -267,14 +267,6 @@ var page = {
 					item.setAttribute('hidden', '');
 				}
 			});
-
-			// for(i = 0; i < items.length; i += 1) {
-			// 	if(items[i].dataset.cat.indexOf(category) !== -1) {
-			// 		items[i].removeAttribute('hidden');
-			// 	} else {
-			// 		items[i].setAttribute('hidden', '');
-			// 	}
-			// }
 		}
 	}
 };
