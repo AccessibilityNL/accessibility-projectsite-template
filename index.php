@@ -77,10 +77,15 @@ foreach($data['data'] as $module)
 						$groups['cat'] = array();
 					}
 
-					if(!in_array(strtolower($row['value']), $groups['cat']))
-					{
-						$groups['cat'][] = strtolower($row['value']);
-					}
+          $categoryValues = explode(',', strtolower($row['value']));
+
+          foreach ($categoryValues as $i => $category) {
+            $trimmedCat = trim($category);
+            if(!in_array($trimmedCat, $groups['cat']))
+  					{
+  						$groups['cat'][] = $trimmedCat;
+  					}
+          }
 				}
 
 				if($row['name'] == 'antwoord')
