@@ -178,7 +178,9 @@ nav.sub
 	nav.sub ul
 	{
 		list-style-type: none;
-		display: block;
+		display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 		margin: 0;
 		padding: 0;
 		white-space: nowrap;
@@ -186,6 +188,9 @@ nav.sub
 	}
 		nav.sub ul li
 		{
+      flex-basis: auto;
+      flex-grow: 0;
+      flex-shrink: 1;
 			margin: 0;
 			padding: 0;
 			display: inline-block;
@@ -940,6 +945,17 @@ section.afbeelding
 				{
 					padding: 10px;
 				}
+
+  nav.sub ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  nav.sub ul > li {
+    width: 100%;
+    text-align: center;
+  }
 
 	.overlay
 	{
