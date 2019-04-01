@@ -140,11 +140,10 @@ header
 	nav.main ul
 	{
 		list-style-type: none;
-		display: block;
+		display: flex;
+    flex-wrap: wrap;
 		margin: 0;
 		padding: 0;
-		white-space: nowrap;
-		overflow: hidden;
 	}
 		nav.main ul li
 		{
@@ -155,18 +154,11 @@ header
 			nav.main ul li a
 			{
 				display: block;
-				padding: 10px 20px;
+				padding: 0.5em 1em;
 				text-decoration: none;
 				font-size: 125%;
 			}
-			nav.main ul li:first-of-type a
-			{
-				padding-left: 0;
-			}
-			nav.main ul li:last-of-type a
-			{
-				padding-right: 0;
-			}
+
 			nav.main ul li a:focus,
 			nav.main ul li a:hover
 			{
@@ -901,7 +893,7 @@ section.afbeelding
 	nav.sub ul li a
 	{
 		font-size: 100%;
-		padding: 10px;
+		padding: 0.5em 1em;
 	}
 }
 
@@ -935,6 +927,7 @@ section.afbeelding
 	}
 		nav.main ul
 		{
+      flex-direction: column;
 			margin-top: 40px;
 			padding-bottom: 50px;
 		}

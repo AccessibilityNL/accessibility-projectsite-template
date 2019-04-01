@@ -236,7 +236,7 @@ var page = {
 			}
 
 			if(buttons.length) {
-				page.filter.activate(buttons[0]);				
+				page.filter.activate(buttons[0]);
 			}
 		},
 		activate: function(button) {
@@ -253,13 +253,20 @@ var page = {
 
 			button.classList.add('active');
 
-			for(i = 0; i < items.length; i += 1) {
-				if(items[i].dataset.cat === category) {
-					items[i].removeAttribute('hidden');
+			Array.prototype.forEach.call(items, function activate(item) {
+				var itemCategories = item.dataset.cat
+					? item.dataset.cat.split(',')
+						.map(function trim(cat) {
+							return cat.trim();
+						})
+					: [];
+
+				if (itemCategories.indexOf(category) !== -1) {
+					item.removeAttribute('hidden');
 				} else {
-					items[i].setAttribute('hidden', '');
+					item.setAttribute('hidden', '');
 				}
-			}
+			});
 		}
 	}
 };
